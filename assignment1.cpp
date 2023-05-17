@@ -2,43 +2,42 @@
 using namespace std;
 
 class Car{
-	private:
+    private:
     	int ReleaseYear;
         string customer;
         int speed;
 	
     public:
     	Car(int Year, string Customer, int Speed){    //constructor
-        	ReleaseYear = Year;
+            ReleaseYear = Year;
             customer = Customer;
             speed = Speed;
         }
         
         int get_ReleaseYear(){
-        	return ReleaseYear;
+            return ReleaseYear;
         }
         
         string get_customer(){
-        	return customer;
+            return customer;
         }
         
         int get_speed(){
-        	return speed;
+            return speed;
         }
         
         void accelerate(){
-        	speed += 10;
+            speed += 10;
         }
         
         void brake(){
-        	speed -= 10;
+            speed -= 10;
         }
-
 };
 
 
 int main() {
-	Car car1(2000, "Tata", 0);
+    Car car1(2000, "Tata", 0);
     
     //accelerate 5 times
     for(int i=0; i<5; i++){
@@ -52,5 +51,5 @@ int main() {
     }
     cout << "Car1 speed after brake 5 times = " << car1.get_speed();
     
-	return 0;
+    return 0;
 }
